@@ -69,6 +69,7 @@
   },
   "scripts": {
     "prepublish": "npm run convert-idl",
+    "preinstall": "npm run convert-idl",
     "pretest": "npm run convert-idl && git submodule update --init --recursive",
     "test-wpt": "mocha test/web-platform-tests/index.js",
     "test-tuwpt": "mocha test/web-platform-tests/to-upstream.js",
